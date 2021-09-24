@@ -1,0 +1,16 @@
+os: linux
+dist: focal
+language: generic
+services:
+  - docker
+
+jobs:
+  include:
+    - stage: DatAgora_PartDieu build
+      script:
+      - |
+        docker --version
+        docker-compose --version
+        # Validate the docker-compose.yml
+        docker-compose config
+        docker-compose build
