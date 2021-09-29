@@ -11,8 +11,8 @@ This demo was developed for the
 [place of vegetation in cities project](https://github.com/VCityTeam/DatAgora/wiki/Vegetalization-Project)
 within DatAgora.
 
-## Used dockers
-The dockers used in this demo are :
+## Docker containers used by this demo
+This demo assumes the existence of the following docker containers:
 - A [Geoserver docker](https://hub.docker.com/r/kartoza/geoserver/)
 - A [Geoserver setup docker](https://github.com/VCityTeam/Geoserver-Setup-docker)
 - A [3DTiles server docker](https://github.com/VCityTeam/3DTiles-Server-docker)
@@ -24,6 +24,8 @@ The dockers used in this demo are :
 ## Running the demo for the first time
 The only pre-requisite is to have a host with 
 [docker compose](https://docs.docker.com/compose/) installed. Once docker is installed, start the docker daemon.
+
+If you wish to modify the default ports (as well as other parameters) used by this demo then you might consider editing the [`.env`](.env) docker-compose environment file.
 
 In order to launch the demo (from a terminal) clone this repository and
 change the directory to be the one holding this Readme.md file and run the
