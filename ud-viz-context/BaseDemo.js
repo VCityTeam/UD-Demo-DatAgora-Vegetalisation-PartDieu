@@ -10,7 +10,7 @@ import './BaseDemo.css';
 const jquery = require('jquery');
 
 const ModuleView = Widgets.Components.ModuleView;
-const TilesManager = Widgets.Components.TilesManager;
+const TilesManager = Components.TilesManager;
 const LayerManager = Widgets.Components.LayerManager;
 const { $3DTemporalBatchTable } = Widgets;
 const { $3DTemporalBoundingVolume } = Widgets;
